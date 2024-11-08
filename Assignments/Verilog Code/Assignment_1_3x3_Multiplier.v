@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+// Gate_Level_modeling
 module Multiplier_3x3(
   input A2, A1, A0, B2, B1, B0,
   output [5:0]P
@@ -53,5 +53,13 @@ module FA_GL(
     and a1(w1,w0,C);
     and a2(w2,A,B);
     or o1(Carry,w1,w2);
+endmodule
+
+// DataFlow_Modeling
+module Multiplier_3x3(
+  input [2:0] A, B, 
+  output [5:0] P     
+);
+  assign P = A * B;  
 endmodule
 
