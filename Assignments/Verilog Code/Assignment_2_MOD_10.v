@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
-module mod10_counter (
+ 
+module MOD_10(
     input clk,
     input reset,
     output reg [3:0] count
