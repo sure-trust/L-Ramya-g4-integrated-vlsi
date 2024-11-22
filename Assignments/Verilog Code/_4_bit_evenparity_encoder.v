@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module _4_bit_Even_Parity_Encoder(
+module _4_bit_evenparity_encoder(
     input   [3:0] data,   // 4-bit input
     output  [4:0] encode  // 5-bit output (4 data bits + parity bit)
 );
